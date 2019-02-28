@@ -1,0 +1,673 @@
+/* $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+*/
+
+::selection {
+    background: #FFFF00;
+    /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+    background: #FFFF00;
+    /* Gecko Browsers */
+}
+
+@font-face {
+    font-family: 'AkzidenzGrotesk-Med';
+    /*a name to be used later*/
+    src: url('fonts/AkzidenzGrotesk-Medium.otf');
+    /*URL to font*/
+}
+
+@font-face {
+    font-family: 'AkzidenzGrotesk-Bold';
+    /*a name to be used later*/
+    src: url('fonts/AkzidenzGrotesk-Bold.otf');
+    /*URL to font*/
+}
+
+@font-face {
+    font-family: 'AkzidenzGrotesk-Reg';
+    /*a name to be used later*/
+    src: url('fonts/AkzidenzGrotesk-Regular.otf');
+    /*URL to font*/
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* Space out content a bit */
+
+body {
+    padding: 2em;
+    border: 2em solid #fafafa;
+    background-color: #f1f1f1;
+    font-family: 'AkzidenzGrotesk-Med';
+    font-size: 1.5em;
+    color: #00214d;
+}
+
+a {
+    color: #00214d;
+}
+
+a:active,
+a:focus,
+a:visited {
+    color: #00214d;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0000e6;
+    text-decoration: none;
+}
+
+
+/* CONTENT */
+
+.blast {
+    display: inline-block;
+}
+
+.navbar-brand {
+    padding-top: 1.8em;
+    padding-bottom: 1.8em;
+    padding-left: 0;
+    width: 220px;
+    font-family: 'AkzidenzGrotesk-Bold';
+    white-space: nowrap;
+    overflow: hidden;
+    display: none;
+}
+
+.nav {
+    padding-top: 1.6em;
+}
+
+.menu-btn a,
+.menu-btn a:hover {
+    display: inline-block;
+    padding: 1em;
+    padding-top: 1em;
+    margin-left: 1em;
+}
+
+.menu-btn a:focus,
+.menu-btn a:visited {
+    text-decoration: none;
+    color: #00214d;
+}
+
+.menu-btn a:hover {
+    background-color: #FFFF00;
+    color: #0000e6;
+}
+
+.contact {
+    float: right;
+}
+
+.hello {
+    padding-top: 1.5em;
+    width: 63vw;
+    
+    margin-bottom: 40px;
+    font-size: 6.3vh;
+    line-height: 1.1em;
+}
+
+.highlight {
+    color: #0000e6;
+}
+
+.social {
+    overflow: hidden;
+}
+
+.social a:hover i {
+    background-color: #FFFF00;
+}
+
+.fa-lg {
+    padding: 0.7em;
+}
+
+h2 {
+    font-family: 'AkzidenzGrotesk-Reg';
+    font-size: 1em;
+    color: grey;
+}
+
+.glyphicon {
+    font-size: 0.8em;
+}
+
+h3 {
+    font-size: 1.5em;
+    line-height: 2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin-top: 0;
+}
+
+h4 {
+    font-size: 1em;
+    line-height: 2em;
+}
+
+.emph {
+    font-family: 'AkzidenzGrotesk-Bold';
+}
+
+.headerR {
+    float: right;
+    width: 79%;
+    padding-bottom: 1em;
+}
+
+.work {
+    min-height: 60vw;
+    width: 100%;
+    overflow: hidden;
+}
+
+.myfilters {
+    padding-top: 6.9em;
+    float: left;
+    width: 19%;
+}
+
+.myfilters button {
+    padding-left: 0;
+    border: 0;
+    outline: 0;
+    background: none;
+    display: block;
+    text-align: left;
+}
+
+.myfilters button:hover {
+    background-color: #FFFF00;
+    color: #0000e6;
+}
+
+.go-top {
+    position: fixed;
+    right: 1.1em;
+    top: 50%;
+    display: none;
+
+}
+
+.top-text:hover {
+    background-color: #FFFF00;
+}
+
+.top-text {
+    padding: 0.3em 0.5em 0.5em 0.5em;
+    /* Safari */
+    -webkit-transform: rotate(90deg);
+    /* Firefox */
+    -moz-transform: rotate(90deg);
+    /* IE */
+    -ms-transform: rotate(90deg);
+    /* Opera */
+    -o-transform: rotate(90deg);
+    /* Internet Explorer */
+    filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=1);
+}
+
+.grid {
+    float: right;
+    width: 79%;
+    overflow: hidden;
+}
+
+.gridtitle {
+    padding: 1em;
+    width: 50%;
+    position: absolute;
+    font-family: 'AkzidenzGrotesk-Bold';
+    font-size: 1.3vw;
+}
+
+.gridHighlight {
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 76%;
+    height: 100%;
+    position: absolute;
+}
+
+.col-md-4,
+.col-sm-6,
+.col-xs-12 {
+    height: 15vw;
+    max-width: 960px;
+    padding: 0;
+    border: 1px solid #f1f1f1;
+    outline: 0;
+    background: none center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.row {
+    padding: 0;
+    margin: 0;
+}
+
+.twoup {
+    height: 25vw;
+    background-size: contain;
+}
+
+.threeup {
+    background-size: contain;
+}
+
+.collaborations {
+    width: 67vw;
+    max-width: 780px;
+    margin-bottom: 40px;
+    padding-top: 2em;
+}
+
+.clients {
+    margin: 10px;
+    width: 7vw;
+    height: 7vw;
+    background-size: contain;
+    filter: grayscale(1);
+}
+
+.clients:hover {
+    filter: grayscale(0);
+}
+
+
+/* Project Pages */
+
+.honors {
+    float: right;
+    width: 65%;
+    overflow: hidden;
+}
+
+.proj {
+    padding-top: 1.5em;
+    margin-bottom: 40px;
+}
+
+.proj-desc,
+.proj-sum {
+    padding-top: 1.5em;
+    margin-bottom: 40px;
+}
+
+.proj-p {
+    width: 68%;
+    font-family: 'AkzidenzGrotesk-Reg';
+    line-height: 1.4em;
+}
+
+.gallery-wrap>.proj-p {
+    width: 100%;
+}
+
+.proj-p>a {
+    color: #0000e6;
+}
+
+.caption {
+    color: grey;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.quote {
+    padding-left: 2em;
+    padding-right: 2em;
+    border-left: 5px solid #E0E0E0;
+    line-height: 2em;
+    font-size: 1em;
+    color: grey;
+}
+
+.notification {
+    background-color: #FFFF00;
+    padding: 1em;
+}
+
+table td {
+    border-top: none !important;
+    border-spacing: 0 !important;
+}
+
+.table-condensed>thead>tr>th,
+.table-condensed>tbody>tr>th,
+.table-condensed>tfoot>tr>th,
+.table-condensed>thead>tr>td,
+.table-condensed>tbody>tr>td,
+.table-condensed>tfoot>tr>td {
+    padding: 0px;
+}
+
+.proj-table {
+    padding-top: 1.5em;
+    float: right;
+    width: 25%;
+}
+
+.proj-table .val {
+    font-family: 'AkzidenzGrotesk-Reg';
+    color: grey;
+}
+
+.list-group-item {
+    color: #00214d;
+    /*color turns white if not changed*/
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.press-li {
+    line-height: 3em;
+    font-family: 'AkzidenzGrotesk-Reg';
+}
+
+img.press-item {
+    height: 2em;
+    width: 3em;
+    padding-right: 1em;
+}
+
+.proj-table a {
+    color: #0000e6;
+}
+
+.creditnames {
+    font-family: 'AkzidenzGrotesk-Reg';
+    color: grey;
+}
+
+.hero-media {
+    position: absolute;
+    left: 0;
+    right: 0;
+    clear: both;
+}
+
+.noclearance {
+    height: 10vw;
+    text-align: center;
+    vertical-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+
+/* Image Gallery */
+
+.gallery-wrap {
+    width: 68%;
+}
+
+img.gallery-img {
+    height: 30vw;
+}
+
+.hero-gallery img {
+    height: 46vw;
+    padding-right: 1px;
+}
+
+img.imginsert {
+    max-width: 100%;
+    padding-top: 1em;
+}
+
+.vidinsert {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+
+
+/* VIDEOS */
+
+.video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 1920px;
+    max-height: 1080px;
+    position: absolute;
+}
+
+
+/* THE RED ROAD specifics */
+
+.redroad-wrapper {
+    width: 50%;
+    padding-bottom: 37%;
+    background: none;
+}
+
+.RR {
+    height: 4vw;
+    font-size: 2vw;
+    vertical-align: center;
+    text-align: center;
+    padding-bottom: 0.5em;
+}
+
+.eps {
+    font-size: 0.8em;
+    height: 2vw;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 0;
+}
+
+
+/* footer */
+
+.footer {
+    text-align: center;
+    margin-top: 8vw;
+    margin-bottom: 6vh;
+}
+
+.header,
+.marketing,
+.footer {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/* Supporting marketing content */
+
+.marketing {
+    margin: 0px 0;
+    p + h4 {
+        margin-top: 28px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .gridtitle {
+        font-size: 2vw;
+    }
+}
+
+
+/* Responsive: Portrait tablets and up */
+
+@media screen and (max-width: 767px) {
+    body {
+        padding: 1em;
+        font-size: 1.2em;
+    }
+    .container {
+        width: 100%;
+    }
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    a.mo_gridlink {
+        color: #0000e6;
+    }
+    /* Space out the masthead */
+    .header {
+        /* margin-bottom: 10px; */
+    }
+    .navbar-header {
+        display: none;
+    }
+    .navbar-brand {
+        padding-top: 15px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .hello {
+        font-size: 2em;
+        line-height: 1em;
+        margin-bottom: 20px;
+        padding-top: 0.5em;
+        width: 100%;
+    }
+    .fa-lg {
+        padding: 0.4em;
+    }
+    .myfilters {
+        display: none;
+    }
+    .headerR {
+        width: 100%;
+        padding-bottom: 0;
+        padding-top: 1em;
+    }
+    .work {
+        top: 5vh;
+        width: 100%;
+        min-height: 80vh;
+    }
+    .grid {
+        float: right;
+        width: 100%;
+        overflow: hidden;
+    }
+    .gridtitle {
+        font-size: 4vw;
+    }
+    .col-md-4,
+    .col-sm-6,
+    .col-xs-12 {
+        height: 45vw;
+    }
+    
+    .collaborations {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .collab_text {
+        font-size: 1em;
+        line-height: 1.3em;
+        font-family: 'AkzidenzGrotesk-Reg';
+    }
+    .clients {
+        height: 7vw;
+        background-size: contain;
+        margin: 3px;
+    }
+    .honors {
+        width: 100%;
+    }
+    .press-li {
+        line-height: 2em;
+        font-family: 'AkzidenzGrotesk-Reg';
+    }
+    .proj {
+        padding-top: 0em;
+    }
+    .proj-title {
+        font-size: 3em;
+    }
+    .longtitle {
+        font-size: 2em;
+    }
+    .proj-p {
+        width: 100%;
+    }
+    .proj-table {
+        margin-top: 2em;
+        margin-bottom: 2em;
+        float: left;
+        width: 100%;
+        border-bottom: 1px solid #E0E0E0;
+    }
+    img.gallery-img {
+        height: 40vw;
+    }
+    .hero-gallery img {
+        height: 75vw;
+    }
+    .gallery-wrap {
+        width: 100%;
+    }
+    .twoup {
+        height: 30vw;
+        background-size: cover;
+    }
+    .threeup {
+        height: 35vw;
+    }
+    .redroad-wrapper {
+        width: 100%;
+        padding-bottom: 75%;
+        background: none;
+    }
+    .RR {
+        height: 6vw;
+        font-size: 3vw;
+        vertical-align: center;
+        text-align: center;
+        padding-bottom: 0.5em;
+    }
+    .eps {
+        font-size: 0.6em;
+        height: 4vw;
+        text-align: center;
+        padding-top: 1em;
+        padding-bottom: 0;
+    }
+    .snaring {
+        height: 48vw;
+    }
+}
